@@ -1,6 +1,14 @@
+"""
+    Module name :- apps
+"""
+
 from django.apps import AppConfig
 
 
 class StoreConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'store'
+    """
+    App config class.
+    """
+
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "store"
