@@ -92,6 +92,9 @@ class Author(models.Model):
 
         cls.objects.bulk_create(author_list)
 
+    def author_details(self):
+        return self.name, self.profile
+
     @classmethod
     def all_authors(cls):
         return cls.objects.all()
